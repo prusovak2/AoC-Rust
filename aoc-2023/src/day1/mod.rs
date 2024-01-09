@@ -1,8 +1,7 @@
 use crate::common::{file::read_lines_from_file, strings::matches_substr_on_index};
 
 pub fn day1() {
-    println!("Hello, world!");
-    let res = get_calibration(".\\src\\day1\\day1\\input\\part1-whole.txt");
+    let res = get_calibration(".\\src\\day1\\input\\part1-whole.txt");
     println!("Res: {}", res);
 }
 
