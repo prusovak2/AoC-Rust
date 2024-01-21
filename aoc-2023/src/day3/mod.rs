@@ -171,4 +171,16 @@ mod tests {
     pub fn test_part1(){
         assert_eq!(part1(".\\src\\day3\\inputs\\part1-example.txt"), 4361)
     }
+
+    #[test]
+    pub fn test_part1_parsing(){
+        let engine = parse_engine(".\\src\\day3\\inputs\\part1-whole.txt");
+        let num = engine.numbers.get(2).unwrap();
+        println!("{:?}", engine);
+        // assert_eq!(num.value, 35);
+        // let poss = num.get_positions_to_check();
+        // println!("x:{}, y:{}", num.x, num.y);
+        // println!("{:?}", poss);
+        // assert_eq!(num.is_part_number(&engine.symbols), true);
+    }
 }
